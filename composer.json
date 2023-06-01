@@ -1,80 +1,80 @@
 {
-    "name": "hakimassouane2/admin-api-bundle",
-    "type": "symfony-bundle",
-    "description": "APIs management for Symfony projects.",
-    "keywords": [
-        "api",
-        "rest"
-    ],
-    "homepage": "https://sylius.com",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Paweł Jędrzejewski",
-            "homepage": "https://pjedrzejewski.com"
-        },
-        {
-            "name": "Sylius project",
-            "homepage": "https://sylius.com"
-        },
-        {
-            "name": "Community contributions",
-            "homepage": "https://github.com/Sylius/Sylius/contributors"
-        }
-    ],
-    "require": {
-        "php": "^8.0",
-        "league/oauth2-server": "^8.5.1",
-        "sylius-labs/doctrine-migrations-extra-bundle": "^0.2.0",
-        "sylius-labs/polyfill-symfony-framework-bundle": "^1.0",
-        "sylius/sylius": "~1.11.0 || ~1.12.0",
-        "symfony/form": "^5.4 || ^6.0",
-        "symfony/framework-bundle": "^5.4 || ^6.0",
-        "symfony/validator": "^5.4 || ^6.0"
+  "name": "hakimassouane2/admin-api-bundle",
+  "type": "symfony-bundle",
+  "description": "APIs management for Symfony projects.",
+  "keywords": [
+    "api",
+    "rest"
+  ],
+  "homepage": "https://sylius.com",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Paweł Jędrzejewski",
+      "homepage": "https://pjedrzejewski.com"
     },
-    "require-dev": {
-        "doctrine/data-fixtures": "^1.5",
-        "doctrine/doctrine-bundle": "^1.12 || ^2.0",
-        "doctrine/orm": "^2.7",
-        "lchrusciel/api-test-case": "^5.0",
-        "matthiasnoback/symfony-config-test": "^4.2",
-        "matthiasnoback/symfony-dependency-injection-test": "^4.2",
-        "phpspec/phpspec": "^7.0",
-        "phpunit/phpunit": "^9.5",
-        "polishsymfonycommunity/symfony-mocker-container": "^1.0",
-        "psalm/plugin-symfony": "^3.1",
-        "symfony/browser-kit": "^5.4",
-        "symfony/debug-bundle": "^5.4",
-        "symfony/dependency-injection": "^5.4",
-        "symfony/dotenv": "^5.4",
-        "symfony/monolog-bundle": "^3.7",
-        "symfony/web-profiler-bundle": "^5.4",
-        "vimeo/psalm": "^4.6.4"
+    {
+      "name": "Sylius project",
+      "homepage": "https://sylius.com"
     },
-    "config": {
-        "sort-packages": true,
-        "allow-plugins": {
-            "symfony/flex": true,
-            "symfony/thanks": false
-        }
-    },
-    "extra": {
-        "branch-alias": {
-            "dev-main": "1.13-dev"
-        },
-        "symfony": {
-            "require": "^5.4"
-        }
-    },
-    "autoload": {
-        "psr-4": {
-            "Sylius\\Bundle\\AdminApiBundle\\": "src/"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "Sylius\\Bundle\\AdminApiBundle\\spec\\": "spec/",
-            "Tests\\Sylius\\Bundle\\AdminApiBundle\\": "tests/"
-        }
+    {
+      "name": "Community contributions",
+      "homepage": "https://github.com/Sylius/Sylius/contributors"
     }
+  ],
+  "require": {
+    "php": "^8.0",
+    "klapaudius/oauth-server-bundle": "^3.1.2",
+    "sylius-labs/doctrine-migrations-extra-bundle": "^0.2.0",
+    "sylius-labs/polyfill-symfony-framework-bundle": "^1.0",
+    "sylius/sylius": "~1.11.0 || ~1.12.0",
+    "symfony/form": "^5.4 || ^6.0",
+    "symfony/framework-bundle": "^5.4 || ^6.0",
+    "symfony/validator": "^5.4 || ^6.0"
+  },
+  "require-dev": {
+    "doctrine/data-fixtures": "^1.5",
+    "doctrine/doctrine-bundle": "^1.12 || ^2.0",
+    "doctrine/orm": "^2.7",
+    "lchrusciel/api-test-case": "^5.0",
+    "matthiasnoback/symfony-config-test": "^4.2",
+    "matthiasnoback/symfony-dependency-injection-test": "^4.2",
+    "phpspec/phpspec": "^7.0",
+    "phpunit/phpunit": "^9.5",
+    "polishsymfonycommunity/symfony-mocker-container": "^1.0",
+    "psalm/plugin-symfony": "^3.1",
+    "symfony/browser-kit": "^5.4",
+    "symfony/debug-bundle": "^5.4",
+    "symfony/dependency-injection": "^5.4",
+    "symfony/dotenv": "^5.4",
+    "symfony/monolog-bundle": "^3.7",
+    "symfony/web-profiler-bundle": "^5.4",
+    "vimeo/psalm": "^4.6.4"
+  },
+  "config": {
+    "sort-packages": true,
+    "allow-plugins": {
+      "symfony/flex": true,
+      "symfony/thanks": false
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-main": "1.13-dev"
+    },
+    "symfony": {
+      "require": "^5.4"
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "Sylius\\Bundle\\AdminApiBundle\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Sylius\\Bundle\\AdminApiBundle\\spec\\": "spec/",
+      "Tests\\Sylius\\Bundle\\AdminApiBundle\\": "tests/"
+    }
+  }
 }
