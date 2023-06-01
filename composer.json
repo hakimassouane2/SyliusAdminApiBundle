@@ -24,7 +24,7 @@
   ],
   "require": {
     "php": "^8.0",
-    "klapaudius/oauth-server-bundle": "^3.1.2",
+    "klapaudius/oauth-server-bundle": "^4.0",
     "sylius-labs/doctrine-migrations-extra-bundle": "^0.2.0",
     "sylius-labs/polyfill-symfony-framework-bundle": "^1.0",
     "sylius/sylius": "~1.11.0 || ~1.12.0",
